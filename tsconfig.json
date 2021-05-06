@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule":true,
+    "esModuleInterop": true,
+    "downlevelIteration":true,
+    "target": "es5",
+    "sourceMap": true,
+    "outDir": "./dist/Core",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+
+    }
+  },
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts","gulpfile.ts"]
+}

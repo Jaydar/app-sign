@@ -1,0 +1,18 @@
+version: '3'
+services:
+    Super:
+        container_name: Super
+        image: jaydar/unvp:latest
+        tty: true
+        restart: always
+        ports:
+            - 8010:3000
+        volumes:
+            - ./dist:/var/Web/
+            - ./Public:/var/Web/Public
+        networks:
+            docker_default:
+                ipv4_address: 172.18.1.10
+networks:
+    docker_default:
+        external: true

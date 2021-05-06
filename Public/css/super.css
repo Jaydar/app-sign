@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #000;
+    font-size: 12px;
+    background: #fff;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.wrap{
+    width: 95%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* 第一部分 */
+.app_info{
+    padding: 20px 0;
+    width: 87.5%;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+}
+
+.app_logo{
+    flex:1;
+    float: left;
+    margin-right: 10px;
+    /* width: 28vw; */
+}
+
+.app_logo img{
+    /* width: 100%; */
+    max-width: 100px;
+    border-radius: 20px;
+    display: block;
+}
+
+.info_right{
+    flex: 2;
+}
+
+.info_right p{
+    margin-top: 6px;
+    margin-left: 3.28358%;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.cli_div{
+    margin-top: 1.8em;
+    zoom: 1;
+}
+
+.desc_div{
+    float: right;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #067AFE;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.down_div{
+    float: left;
+    width: auto;
+    padding: 4px 15px;
+    background: #0477F9;
+    border: #0477F9 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* 第二部分 */
+.app_show{
+    display: flex;
+    padding: 0 0 20px;
+    width: 87.5%;
+    margin: 0 auto;
+    background: #fff;
+    color: #8E8F92;
+}
+
+.app_score{
+    flex: 1;
+    overflow: hidden;
+}
+
+.app_score strong{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.app_score img{
+    width: 80px;
+    margin-left: 1px;
+}
+
+.app_score p{
+    color: #d8d8d8;
+    font-size: 12px;
+}
+
+.app_age{
+    text-align: right;
+}
+
+.app_age strong{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.app_age p{
+    color: #d8d8d8;
+    font-size: 12px;
+}
+
+/* 第三部分 */
+.comment_box,.app_intro,.information_box{
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 87.5%;
+    border-top: 1px solid #e5e5e5;
+}
+
+.app_title{
+    margin-bottom: .85em;
+    font-size: 20px;
+}
+
+.comment_con{
+    display: flex;
+}
+
+.comment_left{
+    flex: 1;
+}
+
+.comment_left strong{
+    font-size: 60px;
+    line-height: 43px;
+    color: #4A4A4E;
+    font-weight: bold;
+}
+
+.comment_left p{
+    width: 91px;
+    text-align: center;
+    color: #7B7B7B;
+    margin-top: 10px;
+}
+
+.comment_right{
+    width: 63.38308%;
+}
+
+.comment_star_list li{
+    line-height: 1;
+}
+
+.comment_star,.comment_progress{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comment_star{
+    position: relative;
+    width: 46px;
+    height: 7px;
+}
+
+.comment_star img{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.comment_star div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.comment_progress{
+    position: relative;
+    width: calc(100% - 56px);
+    height: 2px;
+    background: #E9E9EC;
+    border-radius: 2px;
+}
+
+.comment_progress div{
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4A4A4E;
+    border-radius: 2px;
+}
+
+.comment_right p{
+    margin-top: 5px;
+    color: #7B7B7B;
+    text-align: right;
+}
+
+.app_intro_con{
+    position: relative;
+    line-height: 1.8;
+    font-size: 14px;
+    height: 5.4em;
+    overflow: hidden;
+}
+
+.information_list li{
+    display: flex;
+    line-height: 3.5;
+    border-bottom: #F2F2F2 1px solid;
+}
+
+.information_list li .l{
+    color: #737379;
+}
+
+.information_list li .r{
+    flex: 1;
+    text-align: right;
+}
+
+.information_list li .r p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    line-height: 1.2;
+}
+
+.information_list li:last-child {
+    border: none;
+}
+
+.bc{
+    color: #0070c9 !important;
+}
+
+.disclaimer{
+    padding: 10px;
+    color: #999;
+    background: #F9F9F9;
+}
+
+/* 遮罩五角星的div样式 */
+.comment_star_list li:nth-child(2) .comment_star div {
+    width: 20%;
+}
+
+.comment_star_list li:nth-child(3) .comment_star div {
+    width: 40%;
+}
+
+.comment_star_list li:nth-child(4) .comment_star div {
+    width: 60%;
+}
+
+.comment_star_list li:nth-child(5) .comment_star div {
+    width: 80%;
+}
+
+/* 进度条高亮样式 */
+.comment_star_list li:nth-child(1) .comment_progress div {
+    width: 90%;
+}
+
+.comment_star_list li:nth-child(2) .comment_progress div {
+    width: 10%;
+}
+
+
+.wechat-tips {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0.625rem;
+	width: 7rem;
+	height: auto
+}
+
+.wechat-tips img {
+	width: 100%;
+	height: 100%
+}
+
+.mask {
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    position: absolute; top: 0; left:0;
+    background-color: #FFFFFFD4;
+    display: none;
+}
+.qrcode{
+    width: 300px;
+    position: absolute; top:15%; left:50%;
+    margin-left:-150px;
+}
+.qrcode img{
+    width: 100%;
+}
+.qrcode .title{
+    font-size:18px;
+    font-weight: 700;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+{
+    "apps": [
+        {
+            "name": "Super-Sign",
+            "script": "./Core/main.js",
+            "instances": "max",
+            "exec_mode": "cluster",
+            "watch": [
+                "dist"
+            ],
+            "watch_options": {
+                "usePolling": true
+            },
+            "merge_logs": true,
+            "out_file"   : "./PM2/logs/Super-Sign.out.log",
+            "error_file" : "./PM2/logs/Super-Sign.err.log",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    ]
+}

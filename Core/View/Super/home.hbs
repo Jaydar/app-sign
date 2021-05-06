@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/super.css?v=1.6">
+    <title>{{app_name}}</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="app_info">
+            <div class="app_logo"><img src="/apps/{{app_bundle_id}}/icon.png" alt=""></div>
+            <div class="info_right">
+                <p>{{app_name}}</p>
+                <div class="cli_div">
+                    <div class="desc_div">?</div>
+                    <div class="down_div install" data-type="{{type}}" data-url="{{url}}" data-key="{{app_key}}" data-ios="{{ios_target}}" data-android="{{android_target}}">
+                        {{#if url}}
+                            下载安装
+                        {{else}}
+                            免费安装
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="app_show">
+            <div class="app_score">
+                <strong>4.9</strong>
+                <img src="/img/star.png" alt="">
+                <p class="score_pre">10个评分</p>
+            </div>
+            <div class="app_age">
+                <strong>4+</strong>
+                <p>年龄</p>
+            </div>
+        </div>
+
+        <div class="comment_box">
+            <h2 class="app_title">评分及评论</h2>
+            <div class="comment_con">
+                <div class="comment_left">
+                    <strong>4.9</strong>
+                    <p>满分 5 分</p>
+                </div>
+                <div class="comment_right">
+                    <ul class="comment_star_list">
+                        <li>
+                            <div class="comment_star">
+                                <img src="/img/star.png" alt="">
+                                <div></div>
+                            </div>
+                            <div class="comment_progress">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment_star">
+                                <img src="/img/star.png" alt="">
+                                <div></div>
+                            </div>
+                            <div class="comment_progress">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment_star">
+                                <img src="/img/star.png" alt="">
+                                <div></div>
+                            </div>
+                            <div class="comment_progress">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment_star">
+                                <img src="/img/star.png" alt="">
+                                <div></div>
+                            </div>
+                            <div class="comment_progress">
+                                <div></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="comment_star">
+                                <img src="/img/star.png" alt="">
+                                <div></div>
+                            </div>
+                            <div class="comment_progress">
+                                <div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p>10个评分</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app_intro">
+            <h2 class="app_title">新功能</h2>
+            <div class="app_intro_con">
+                <p>版本 2.3.1</p>
+            </div>
+        </div>
+
+        <div class="information_box">
+            <h2 class="app_title">信息</h2>
+            <ul class="information_list">
+                <li>
+                    <span class="l">大小</span>
+                    <div class="r">55.05MB</div>
+                </li>
+                <li>
+                    <span class="l">兼容性</span>
+                    <div class="r"><p>需要 iOS 8.0 或更高版本。与 iPhone、iPad 和 iPod touch 兼容。</p></div>
+                </li>
+                <li>
+                    <span class="l">语言</span>
+                    <div class="r">简体中文</div>
+                </li>
+                <li>
+                    <span class="l">年龄分级</span>
+                    <div class="r">限4岁以上</div>
+                </li>
+                <li>
+                    <span class="l">价格</span>
+                    <div class="r">免费</div>
+                </li>
+                <li>
+                    <span class="l bc">隐私政策</span>
+                    <div class="r"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="disclaimer">免责声明：<br>本网站仅提供下载托管，App内容相关事项由开发者负责，与本网站无关。</div>
+    </div>
+
+    <div class="wechat-tips">
+        <img src="/img/bg_tips_android.png" alt="" id="android_tips" hidden>
+        <img src="/img/bg_tips_ios.png" alt="" id="ios_tips" hidden>
+    </div>
+    <div class="mask">
+        <div class="qrcode">
+            <div class="title">请使扫描二维码进行下载</div>
+            <div>
+                <img id="qrcode" src="https://super.ancpoker.com/qrcode?url=123" />
+            </div>
+        <div>
+    </div>
+    <script src="/js/super.js?v=1.5.7"></script>
+    <script>
+        dico.init()
+    </script>
+</body>
+</html>

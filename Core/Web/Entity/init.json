@@ -1,0 +1,56 @@
+{
+    "accounts":[
+        {
+            "login_key": "key-01.p8",
+            "sign_crt": "crt-01.p12",
+            "crt_pass":"123123",
+            "login_name": "sign_dev_001@outlook.com",
+            "login_pass": "Isign123456",
+            "login_kid": "8ZP5J5FPNL",
+            "issuer_id": "3c80bfcb-b417-409d-bdd3-abb3ddcd0a12",
+            "account_status": 1
+        }
+    ],
+    "users":[
+        {
+            "user_name":"System",
+            "login_name":"system",
+            "login_pass":"295ce99c50aa9e956844ae2269b4962d",
+            "user_status":1
+        }
+    ],
+    "apps":[
+        {   
+            "app_key":"dzpoker",
+            "app_name":"德克萨斯",
+            "app_bundle_id":"com.aiwan.dzpoker",
+            "app_version":"1.0",
+            "ios_target":"",
+            "android_target":"http://ancpoker.com/download/DZpoker-debug.apk"
+        },
+        {
+            "app_key":"quickeasy",
+            "app_name":"快易投",
+            "app_bundle_id":"com.aiwan.quickeasy",
+            "app_version":"1.0",
+            "ios_target":"",
+            "android_target":"http://gb006.com/download/bdx-debug.apk"
+        },
+        {   
+            "app_key":"super",
+            "app_name":"Super",
+            "app_bundle_id":"com.dico.super",
+            "app_version":"1.0",
+            "ios_target":"",
+            "android_target":""
+        }
+    ],
+    "orders":[
+        {
+            "client_num":100,
+            "order_amount":0,
+            "pay_amount":0,
+            "order_status":2
+        }
+    ]
+}

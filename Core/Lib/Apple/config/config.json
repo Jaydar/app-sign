@@ -1,0 +1,10 @@
+{
+    "ipa_path":"./Public/apps/",
+    "key_path":"./config/login_key",
+    "api":{
+        "device": "https://api.appstoreconnect.apple.com/v1/devices",
+        "bundleID": "https://api.appstoreconnect.apple.com/v1/bundleIds",
+        "profile": "https://api.appstoreconnect.apple.com/v1/profiles",
+        "certificate": "https://api.appstoreconnect.apple.com/v1/certificates"
+    }
+}

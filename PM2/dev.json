@@ -1,0 +1,20 @@
+{
+    "apps": [
+        {
+            "name": "Super-Sign",
+            "interpreter":"./node_modules/.bin/ts-node",
+            "interpreter_args":"-r tsconfig-paths/register",
+            "script": "./Core/main.ts",
+            "exec_mode": "fork",
+            "watch": ["./Core/Web"],
+            "watch_options": {
+                "usePolling": true
+            },
+            "ignore_watch": [ "node_modules" ,"**/*.scss"],
+            "merge_logs": true,
+            "out_file"   : "./PM2/logs/Super-Sign.out.log",
+            "error_file" : "./PM2/logs/Super-Sign.err.log",
+            "log_date_format": "YYYY-MM-DD HH:mm:ss"
+        }
+    ]
+}
